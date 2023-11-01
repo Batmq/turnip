@@ -18,3 +18,112 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+
+
+
+/*Animation af teksten i bunden*/
+#MovingText{
+	animation: 5s infinite;
+	animation-name: slidein;
+}
+
+#rssBlock{
+	left:0px;
+	height: 80px;
+	background: #FFFFFF;
+	position: absolute;
+	width:1070px;
+	overflow: hidden;
+}
+
+/*remove p*/
+.cnnContents {
+	width:100%;
+	padding-top: 20px;
+	margin:0 auto;
+	font-size: 30px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: 'Museo';
+	font-weight: 300;
+}
+
+.marqueeStyle {
+	display:inline-block;
+	/* Apply animation to this element */
+	-webkit-animation: scrolling-left1 20s linear infinite;
+	animation: scrolling-left1 20s linear infinite;
+}
+
+.marqueeStyle2 {
+	display:inline-block;
+	/* Apply animation to this element */
+	-webkit-animation: scrolling-left2 20s linear infinite;
+	animation: scrolling-left2 20s linear infinite;
+	animation-delay: 10s;
+}
+/* scrolling-left is continuous/repeatly text */
+@keyframes scrolling-left1 {
+	0% {transform: translateX(100%);
+		-webkit-transform: translateX(100%);}
+	100% {transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);}
+}
+@keyframes scrolling-left2 {
+	0% {transform: translateX(0%);
+		-webkit-transform: translateX(0%);}
+	100% {transform: translateX(-200%);
+		-webkit-transform: translateX(-200%);}
+}
+
+@-webkit-keyframes scrolling-left1 {
+	0% {-webkit-transform: translateX(100%);}
+	100% {-webkit-transform: translateX(-100%);}
+}
+@-webkit-keyframes scrolling-left2 {
+	0% {-webkit-transform: translateX(0%);}
+	100% {-webkit-transform: translateX(-200%);}
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}

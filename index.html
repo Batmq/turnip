@@ -16,7 +16,80 @@
 
 <body>
 
-hej
+<div id="carousel" >
+	<p>Personal</p>
+</div>
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close">&times;</span>
+
+		<div class="row">
+			<div class="col-12 p-0"><img class="img-fluid" src="images/aaron-burden-XxvXRmsH860-unsplash.jpg"></div>
+			<div class="col-12 p-0"><img class="img-fluid" src="images/adam-kool-ndN00KmbJ1c-unsplash.jpg"></div>
+			<div class="col-6 p-0"><img class="img-fluid" src="images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg"></div>
+			<div class="col-6 p-0"><img class="img-fluid" src="images/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg"></div>
+			<div class="col-12 p-0"><img class="img-fluid" src="images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg"></div>
+		</div>
+
+	</div>
+
+</div>
+
+
+<div id='rssBlock'>
+	<p class="cnnContents">
+		<span class="marqueeStyle">&nbsp;continuous infinite text loop 1 continuous infinite text loop 2 </span>
+		<!-- duplicate above, change style to allow continous scroll -->
+		<span class="marqueeStyle2">&nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;</span>
+	</p>
+</div>
+
+
+<div class="container mt-5" id="MovingText,">
+	<div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+</div>
+
+
+
+
+
+
+
+<script>
+	// Get the modal
+	const modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	const btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	const span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
