@@ -23,6 +23,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 body{
 	background-color: #FF862D;
+	font-family: "forma-djr-display", sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 .FontColor1{
@@ -41,7 +44,12 @@ body{
 
 
 
-
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 10vh;
+}
 
 
 

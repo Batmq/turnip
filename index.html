@@ -8,7 +8,8 @@
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
 	<meta name="copyright" content="Information om copyright">
-	
+
+	<link rel="stylesheet" href="https://use.typekit.net/ozj7xgt.css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,18 +18,18 @@
 <body>
 
 
-
+<!--Links i venstre hjørne-->
 <div class="container">
-	<div class="row">
-		<div class="col-"></div>
+	<div class="row g-2 mt-2">
+		<div class="col-1">Tomt</div>
+		<div class="col-1">Tiktok</div>
+		<div class="col-10"><button id="myBtn">Portfolie link</button></div> <!-- Trigger/Open The Modal -->
+		<div class="col-1">Mail</div>
+		<div class="col-1">Instagram</div>
 	</div>
 </div>
 
 
-
-
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -36,7 +37,6 @@
 	<!-- Modal content -->
 	<div class="modal-content">
 		<span class="close">&times;</span>
-
 		<div class="row">
 			<div class="col-12 p-0"><img class="img-fluid" src="images/aaron-burden-XxvXRmsH860-unsplash.jpg"></div>
 			<div class="col-12 p-0"><img class="img-fluid" src="images/adam-kool-ndN00KmbJ1c-unsplash.jpg"></div>
@@ -44,19 +44,30 @@
 			<div class="col-6 p-0"><img class="img-fluid" src="images/oc-gonzalez-xg8z_KhSorQ-unsplash.jpg"></div>
 			<div class="col-12 p-0"><img class="img-fluid" src="images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg"></div>
 		</div>
-
 	</div>
-
 </div>
 
 
-<div id='rssBlock'>
-	<p class="cnnContents">
-		<span class="marqueeStyle">&nbsp;continuous infinite text loop 1 continuous infinite text loop 2 </span>
-		<!-- duplicate above, change style to allow continous scroll -->
-		<span class="marqueeStyle2">&nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;</span>
-	</p>
+<!--Overskrift + motto-->
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-8 display-1">Overskrift</div>
+		<div class="col-8 display-4">Motto</div>
+	</div>
 </div>
+
+<!--Footer, text animation -->
+<div class="container-fluid" id="footer">
+	<div id='rssBlock'>
+		<p class="cnnContents">
+			<span class="marqueeStyle">&nbsp;continuous infinite text loop 1 continuous infinite text loop 2 </span>
+			<!-- duplicate above, change style to allow continous scroll -->
+			<span class="marqueeStyle2">&nbsp;continuous infinite text loop 3 continuous infinite text loop 4&nbsp;</span>
+		</p>
+	</div>
+</div>
+
+
 
 
 
