@@ -28,21 +28,29 @@ body{
 	font-style: normal;
 }
 
+
+/*Font farver*/
 .FontColor1{
 	color: #FFB963;
 }
 
-
 .FontColor2{
 	color: #01605c;
 }
-
 
 .FontColor3{
 	color: #B64003;
 }
 
 
+/*Fonts*/
+.BricolageGrotesque{
+	font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.OverskriftStørrelse{
+	font-size: 250px;
+}
 
 #footer {
 	position: fixed;
@@ -50,36 +58,6 @@ body{
 	width: 100%;
 	height: 10vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Fonttype1{
-	font-family: 'Bricolage Grotesque', sans-serif;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
