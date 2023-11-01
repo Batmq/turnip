@@ -21,18 +21,62 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 
-/*Animation af teksten i bunden*/
-#MovingText{
-	animation: 5s infinite;
-	animation-name: slidein;
+body{
+	background-color: #FF862D;
 }
+
+.FontColor1{
+	color: #FFB963;
+}
+
+
+.FontColor2{
+	color: #01605c;
+}
+
+
+.FontColor3{
+	color: #B64003;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #rssBlock{
 	left:0px;
 	height: 80px;
-	background: #FFFFFF;
 	position: absolute;
-	width:1070px;
+	width:100%;
 	overflow: hidden;
 }
 
