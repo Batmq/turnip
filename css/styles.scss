@@ -26,6 +26,7 @@ body{
 	font-style: normal;
 }
 
+video{display: block;}
 
 
 /*Font farver*/
@@ -37,7 +38,7 @@ body{
 .BricolageGrotesque{font-family: 'Bricolage Grotesque', sans-serif;}
 .OverskriftStørrelse{font-size: 300px;}
 
-.Modalbg{background-color: #FFB963;}
+.Modalbg{background-color: rgba(255,185,99,0.95)}
 .ModalHeight{height: 70vh;}
 
 
@@ -59,8 +60,8 @@ body{
 	width: 100%; /* Full width */
 	height: 100%; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0); /* Black w/ opacity */
+	background-color: rgba(0,0,0); /* Fallback color */
+	background-color: rgba(255,185,99,0.40); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -110,4 +111,8 @@ body{
 
 .next-icon{
 	color: #B64003;
+}
+
+.carousel-control-prev, .carousel-control-next{
+	color: black !important;
 }
