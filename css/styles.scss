@@ -92,5 +92,18 @@ body{
 	border: none;
 	text-decoration: underline;
 	color: #FFB963;
+}
 
+.circle-icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 60%;
+	background-color: #FFB963;
+}
+.icon {
+	color: #FF862D;
+	font-size: 30px;
 }
