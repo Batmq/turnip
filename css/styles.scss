@@ -41,18 +41,9 @@ video{display: block;}
 }
 
 
-
-
 .Modalbg{background-color: rgba(255,185,99,0.95)}
 .ModalHeight{height: 70vh;}
 
-
-#footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	height: 10vh;
-}
 
 /* The Modal (background) */
 .modal {
@@ -78,6 +69,7 @@ video{display: block;}
 	width: 90%; /*Størrelsen på modal*/
 }
 
+
 /* The Close Button */
 .close {
 	position: absolute;
@@ -102,6 +94,7 @@ video{display: block;}
 	color: #FFB963;
 }
 
+
 .circle-icon {
 	width: 40px;
 	height: 40px;
@@ -116,8 +109,48 @@ video{display: block;}
 	font-size: 30px;
 }
 
-
 .arrow-icon {
 	font-size: 40px;
 	color: #B64003;
+}
+
+
+
+.container-fluid{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.scroll{
+	white-space: nowrap;
+}
+
+.scroll div{
+	display: flex;
+}
+
+.RightToLeft{
+	animation: RightToLeft 20s infinite linear;
+}
+
+@keyframes RightToLeft {
+	from {
+		transform: translate(0%);
+	}
+	from {
+		transform: translate(-50%);
+	}
+}
+
+.LogoStørrelse{
+	height: 3rem;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 10vh;
 }
