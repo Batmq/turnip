@@ -37,6 +37,8 @@ body{
 .BricolageGrotesque{font-family: 'Bricolage Grotesque', sans-serif;}
 .OverskriftStørrelse{font-size: 300px;}
 
+.Modalbg{background-color: #FFB963;}
+
 #footer {
 	position: fixed;
 	bottom: 0;
@@ -61,7 +63,7 @@ body{
 
 /* Modal Content */
 .modal-content {
-	background-color: #0a53be;
+	background-color: transparent;
 	margin: auto;
 	padding: 20px;
 	border: 1px solid transparent;
