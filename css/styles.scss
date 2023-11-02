@@ -35,8 +35,13 @@ video{display: block;}
 .FontColor3{color: #B64003;}
 
 /*Fonts*/
-.BricolageGrotesque{font-family: 'Bricolage Grotesque', sans-serif;}
-.OverskriftStørrelse{font-size: 300px;}
+.Overskrift{
+	font-size: 300px;
+	font-family: "Bricolage Grotesque regular", sans-serif;
+}
+
+
+
 
 .Modalbg{background-color: rgba(255,185,99,0.95)}
 .ModalHeight{height: 70vh;}
@@ -75,8 +80,10 @@ video{display: block;}
 
 /* The Close Button */
 .close {
+	position: absolute;
+	top: 0; /* Justér topplacering efter behov */
+	right: 0;
 	color: #B64003;
-	float: right;
 	font-size: 45px;
 	font-weight: bold;
 }
@@ -109,10 +116,8 @@ video{display: block;}
 	font-size: 30px;
 }
 
-.next-icon{
-	color: #B64003;
-}
 
-.carousel-control-prev, .carousel-control-next{
-	color: black !important;
+.arrow-icon {
+	font-size: 40px;
+	color: #B64003;
 }
