@@ -161,11 +161,7 @@ video{display: block;}
 	}
 }
 
-.LogoStørrelse{
-	height: 3rem;
-}
-
-
+.LogoStørrelse{height: 3rem;}
 
 
 #footer {
@@ -176,8 +172,8 @@ video{display: block;}
 }
 
 
+/*Medie q for turnip størrelse og afstand + mottos størrelse*/
 @media screen and (min-width: 375px) {
-
 
 	.OverskriftStørrelse{font-size: 6rem;}
 
@@ -190,7 +186,6 @@ video{display: block;}
 
 @media screen and (min-width: 425px) {
 
-
 	.OverskriftStørrelse{font-size: 7rem;}
 
 	.OverskriftAfstand{padding-top: 15vh;}
@@ -201,7 +196,6 @@ video{display: block;}
 
 
 @media screen and (min-width: 577px) {
-
 
 	.OverskriftStørrelse{font-size: 9rem;}
 
@@ -214,7 +208,6 @@ video{display: block;}
 
 @media screen and (min-width: 768px) {
 
-
 	.OverskriftStørrelse{font-size: 12rem;}
 
 	.OverskriftAfstand{padding-top: 10vh;}
@@ -225,7 +218,6 @@ video{display: block;}
 
 
 @media screen and (min-width: 985px) {
-
 
 	.OverskriftStørrelse{font-size: 15rem;}
 
