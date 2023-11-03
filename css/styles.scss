@@ -97,6 +97,11 @@ video{display: block;}
 	color: #FFB963;
 }
 
+.custom-button:hover {
+   color:#B64003;
+}
+
+
 
 .circle-icon {
 	width: 40px;
@@ -108,9 +113,15 @@ video{display: block;}
 	background-color: #FFB963;
 
 }
+
+
 .icon {
 	color: #FF862D;
 	font-size: 30px;
+}
+
+.icon:hover {
+	color:#B64003;
 }
 
 .arrow-icon {
