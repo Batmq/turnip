@@ -35,14 +35,17 @@ video{display: block;}
 .FontColor3{color: #B64003;}
 
 /*Fonts*/
-.Overskrift{
-	font-size: 300px;
-	font-family: "Bricolage Grotesque regular", sans-serif;
-}
+.OverskriftFont{font-family: "Bricolage Grotesque regular", sans-serif;}
+
+.OverskriftStørrelse{font-size: 5rem;}
+
+.OverskriftAfstand{padding-top: 15vh;}
+
+.MottoStørrelse{font-size: 1rem;}
 
 
 .Modalbg{background-color: rgba(255,185,99,0.95)}
-.ModalHeight{height: auto;}
+.ModalHeight{height: 70vh;}
 
 
 /* The Modal (background) */
@@ -87,7 +90,7 @@ video{display: block;}
 	cursor: pointer;
 }
 
-.custom-button {
+.custom-button{
 	background-color: transparent;
 	border: none;
 	text-decoration: underline;
@@ -130,6 +133,7 @@ video{display: block;}
 	display: flex;
 }
 
+
 .RightToLeft{
 	animation: RightToLeft 20s infinite linear;
 }
@@ -138,8 +142,22 @@ video{display: block;}
 	from {
 		transform: translate(0%);
 	}
+	to {
+		transform: translate(-50%);
+	}
+}
+
+
+.LeftToRight{
+	animation: LeftToRight 20s infinite linear;
+}
+
+@keyframes LeftToRight {
 	from {
 		transform: translate(-50%);
+	}
+	to {
+		transform: translate(0%);
 	}
 }
 
@@ -151,12 +169,72 @@ video{display: block;}
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 10vh;
+	height: auto;
+}
+
+
+@media screen and (min-width: 375px) {
+
+
+	.OverskriftStørrelse{font-size: 6rem;}
+
+	.OverskriftAfstand{padding-top: 15vh;}
+
+	.MottoStørrelse{font-size: 1.2rem;}
+
+}
+
+
+@media screen and (min-width: 425px) {
+
+
+	.OverskriftStørrelse{font-size: 7rem;}
+
+	.OverskriftAfstand{padding-top: 15vh;}
+
+	.MottoStørrelse{font-size: 1.2rem;}
+
+}
+
+
+@media screen and (min-width: 577px) {
+
+
+	.OverskriftStørrelse{font-size: 9rem;}
+
+	.OverskriftAfstand{padding-top: 15vh;}
+
+	.MottoStørrelse{font-size: 1.4em;}
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+	.OverskriftStørrelse{font-size: 12rem;}
+
+	.OverskriftAfstand{padding-top: 10vh;}
+
+	.MottoStørrelse{font-size: 2em;}
+
+}
+
+
+@media screen and (min-width: 985px) {
+
+
+	.OverskriftStørrelse{font-size: 15rem;}
+
+	.OverskriftAfstand{padding-top: 1vh;}
+
+	.MottoStørrelse{font-size: 2.8em;}
+
 }
 
 @media screen and (min-width: 1200px) {
 
-	.ModalHeight{height: 70vh;}
+	.OverskriftStørrelse{font-size: 35vh;}
 
 }
 

@@ -34,7 +34,7 @@
 				<i class="fab fa-tiktok icon"></i>
 			</div>
 		</div>
-		<div class="col-10">
+		<div class="col-10 d-none d-sm-block ">
 			<button id="myBtn" class="custom-button">portfolio</button>
 		</div>
 		<div class="col-1">
@@ -326,30 +326,47 @@
 
 
 <!--Overskrift + motto-->
-<div class="container mt-5">
-	<div class="row justify-content-center">
-		<div class="col-8 FontColor1 p-0 m-0"><h1 class="Overskrift p-0 m-0">turnip</h1></div>
-		<div class="col-8 FontColor2 p-0 m-0"><h2 class="display-3 p-0 m-0">sprout your ideas with turnip</h2></div>
-		<div class="col-8 FontColor2 p-0 m-0"><h2 class="display-3 p-0 m-0"> - where creativity takes root</h2></div>
-</div>
+<div class="container">
+	<div class="row justify-content-center OverskriftAfstand">
+		<div class="col-8 FontColor1 p-0"><h1 class="OverskriftFont OverskriftStørrelse p-0 m-0">turnip</h1></div>
+		<div class="col-8 FontColor2 p-0"><h2 class="MottoStørrelse p-0 m-0">sprout your ideas with turnip</h2></div>
+		<div class="col-8 FontColor2 p-0"><h2 class="MottoStørrelse p-0 m-0"> - where creativity takes root</h2></div>
+	</div>
 </div>
 
 
 
 <!--Footer, text animation -->
 <div class="container-fluid FontColor3 m-0" id="footer">
-	<div class="scroll">
-		<div class=" col-12 RightToLeft fs-1">
-			<p class="m-0"> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
-			<img class="LogoStørrelse" src="images/turnipLogo.svg">
-			<p class="m-0"> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
-			<img class="LogoStørrelse" src="images/turnipLogo.svg">
+	<div class="row">
+		<div class="col-12 d-md-none fs-1">
+			<div class="row">
+				<div class="col-3">
+					<button id="myBtn2" class="custom-button">portfolio</button>
+				</div>
+			</div>
 		</div>
-		<div class="LeftToRight d-none">
-			<p> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
-			<img class="LogoStørrelse" src="images/turnipLogo.svg">
-			<p> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
-			<img class="LogoStørrelse" src="images/turnipLogo.svg">
+		<div class="scroll d-none d-sm-block">
+			<div class="RightToLeft fs-1">
+				<p class="m-0"> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
+				<img class="LogoStørrelse" src="images/turnipLogo.svg">
+				<p class="m-0"> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
+				<img class="LogoStørrelse" src="images/turnipLogo.svg">
+			</div>
+		</div>
+		<div class="scroll">
+			<div class="RightToLeft d-sm-none fs-1">
+				<p class="m-0"> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp</p>
+				<img class="LogoStørrelse" src="images/turnipLogo.svg">
+				<p class="m-0"> &nbsp-&nbsp fotografering &nbsp-&nbsp video &nbsp-&nbsp animation &nbsp-&nbsp websites &nbsp-&nbsp</p>
+				<img class="LogoStørrelse" src="images/turnipLogo.svg">
+			</div>
+			<div class="LeftToRight fs-1 d-sm-none">
+				<p>&nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
+				<img class="LogoStørrelse" src="images/turnipLogo.svg">
+				<p>&nbsp-&nbsp grafisk design &nbsp-&nbsp kommunikation &nbsp-&nbsp konceptudvikling &nbsp-&nbsp branding &nbsp-&nbsp sociale medier &nbsp-&nbsp </p>
+				<img class="LogoStørrelse" src="images/turnipLogo.svg">
+			</div>
 		</div>
 	</div>
 </div>
@@ -360,15 +377,21 @@
 	const modal = document.getElementById("myModal");
 
 	// Get the button that opens the modal
-	const btn = document.getElementById("myBtn");
+	const btn = document.querySelector("#myBtn");
+
+	const btn2 = document.querySelector("#myBtn2");
 
 	// Get the <span> element that closes the modal
 	const span = document.getElementsByClassName("close")[0];
 
 	// When the user clicks the button, open the modal
-	btn.onclick = function() {
+	btn.addEventListener("click", () => {
 		modal.style.display = "block";
-	}
+	});
+
+	btn2.addEventListener("click", () => {
+		modal.style.display = "block";
+	});
 
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() {
