@@ -42,7 +42,7 @@ video{display: block;}
 
 
 .Modalbg{background-color: rgba(255,185,99,0.95)}
-.ModalHeight{height: 70vh;}
+.ModalHeight{height: auto;}
 
 
 /* The Modal (background) */
@@ -119,7 +119,6 @@ video{display: block;}
 .container-fluid{
 	display: flex;
 	align-items: center;
-	height: 100vh;
 	overflow: hidden;
 }
 
@@ -154,3 +153,10 @@ video{display: block;}
 	width: 100%;
 	height: 10vh;
 }
+
+@media screen and (min-width: 1200px) {
+
+	.ModalHeight{height: 70vh;}
+
+}
+
